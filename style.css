@@ -55,6 +55,7 @@ header > hr {
 
 header > div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -147,4 +148,20 @@ button {
   font-size: 17px;
   font-weight: bold;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 500px) {
+  figure {
+    margin: 1rem 0;
+  }
+
+  #showCase,
+  .achievements img {
+    width: 100%;
+  }
+
+  fieldset {
+    min-width: 100%;
+    padding: 0;
+  }
 }
